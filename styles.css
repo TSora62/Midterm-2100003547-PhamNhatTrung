@@ -1,0 +1,216 @@
+/* Cài đặt màu sắc và kiểu chữ cơ bản */
+body {
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    margin: 0;
+    padding: 0;
+    color: #333;
+    background-color: #dadadada; /* Màu nền sáng để nổi bật với màu xanh */
+}
+
+.header1{
+padding: 40px;  
+text-align: center;
+background: cyan;
+color: black;
+}
+.header1 h1{
+    font-size: 40px;
+}
+
+*{
+    box-sizing: border-box;
+}
+
+.row{
+    display: flex;
+    flex-wrap: wrap;
+}
+
+.sidecontent{
+    width: 20%;
+    background-color: #0affeb;
+    padding: 20px;
+    margin-top: 20px;
+    box-sizing: border-box;
+    margin-left: 10px;
+    display: inline-block;
+}
+
+.maincontent{
+    width: 70%;
+    background-color: rgb(197, 197, 197);
+    padding: 20px;
+    margin-left: 20px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+.h2{
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+    unicode-bidi: isolate;
+}
+.br{
+    padding: 20px;
+    flex: 80%;
+    background-color: darkblue;
+}
+
+header {
+    background-color: #003366; /* Xanh nước biển đậm cho thanh menu */
+    color: #fff;
+    padding: 10px 0;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0 20px;
+    text-shadow: #333;
+    text-indent: 10px;
+    font-weight: bold;
+}
+
+.logo {
+    height: 50px;
+}
+
+nav ul {
+    list-style: none;
+    margin: 0;
+    padding: 0;
+    display: flex;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+}
+
+nav ul li a:hover {
+    text-decoration: underline;
+}
+
+
+footer {
+    background-color: #003366; /* Xanh nước biển đậm cho footer */
+    color: #fff;
+    text-align: left;
+    padding: 10px 0;
+    bottom: 0;
+    width: 100%;
+    margin-top: 20px;
+}
+.avatar {
+    width: 150px;
+    height: 100px;
+    border-radius: 50%;
+    transition: transform 0.3s;
+}
+.avatar:hover {
+    justify-content:center ;
+    transform: scale(1.1);
+}
+
+
+.fade-out {
+    opacity: 0;
+    transform: translateY(20px);
+}
+
+.fade-in {
+    opacity: 1;
+    transform: translateY(0);
+}
+.car-link {
+    display: inline-block;
+    transition: transform 0.3s ease-in-out;
+}
+
+.car-link:hover .car {
+    transform: scale(1.1);
+}
+.menu nav ul li a {
+    display: inline-block;
+    transition: transform 0.3s ease, color 0.3s ease;
+    text-decoration: none; /* Xóa gạch chân mặc định */
+   
+}
+.menu nav ul li a:hover {
+    transform: scale(1.2); /* Phóng to liên kết */
+    color: #0affeb; /* Đổi màu chữ khi hover */
+}
+/* Cập nhật cho maincontent */
+.maincontent h2 {
+    margin-top: 40px;
+    margin-bottom: 20px;
+}
+
+.skills-header, .achievements-header {
+    margin-bottom: 20px;
+}
+
+.favorite-cars {
+    list-style: none; /* Loại bỏ gạch đầu dòng cho danh sách */
+    padding: 0; /* Loại bỏ padding mặc định */
+    display: flex; /* Sử dụng flexbox để sắp xếp hình ảnh theo hàng ngang */
+    gap: 20px; /* Khoảng cách giữa các hình ảnh */
+}
+
+.favorite-cars li {
+    display: flex; /* Đảm bảo các phần tử bên trong được căn chỉnh đúng cách */
+    flex-direction: column; /* Đặt hình ảnh và văn bản theo cột */
+    align-items: center; /* Căn giữa các phần tử bên trong */
+}
+
+.favorite-cars img {
+    width: 200px; /* Thay đổi kích thước hình ảnh theo yêu cầu */
+    height: auto; /* Đảm bảo tỷ lệ hình ảnh không bị thay đổi */
+    border-radius: 8px; /* Tùy chọn: thêm bo góc cho hình ảnh */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2); /* Tùy chọn: thêm bóng để hình ảnh nổi bật hơn */
+}
+
+.favorite-cars p{
+    text-align: center;
+    margin-top: 5px;
+}
+
+.favorite-cars img:hover{
+    transform:scale(1.1);
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+}
+
+/* Liên kết trang chủ, thành tích, và liên hệ */
+.menu nav ul li a {
+    color: white;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.menu nav ul li a:hover {
+    text-decoration: underline;
+}
+@keyframes colorChange {
+    0% { background-color: #bd0000; } /* Đỏ */
+    25% { background-color: #00a800; } /* Xanh lá */
+    50% { background-color: #0000c0; } /* Xanh dương */
+    75% { background-color: #ffff00; } /* Vàng */
+    100% { background-color: #d10000; } /* Đỏ trở lại */
+}
+
+body {
+    animation: colorChange 10s infinite; /* Thay đổi màu nền mỗi 10 giây, lặp lại vô hạn */
+}
+
+
+

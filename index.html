@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="vi">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Giới thiệu bản thân</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="bootstrap-5.3.3-dist/css/bootstrap.min.css">
+</head>
+<body>
+    <!-- Thanh menu phía trên -->
+    <header id="top">
+        <div class="header1">
+            <h1>CHÀO MỪNG ĐẾN VỚI TRANG WEB GIỚI THIỆU BẢN THÂN CỦA MÌNH</h1>
+            <p>--- created by Nhật Trung ---</p>
+        </div>
+        <div class="menu">
+            <img src="T1.png" alt="T1" class="logo">
+            <nav>
+                <ul>
+                    <li><a href="#top">Trang chủ</a></li>
+                    <li><a href="#skills">Kỹ năng</a></li>
+                    <li><a href="#achievements">Thành tích</a></li>
+                    <li><a href="#favoritecars">Xe yêu thích</a></li>
+                    <li><a href="#contact">Liên hệ</a></li>
+                </ul>
+            </nav>
+        </div>
+    </header>
+
+    <main >
+        <div class="row">
+            <div class="sidecontent">
+                <h2>Thông tin cá nhân</h2>
+            <img src="Faker.jpg" alt="Ảnh đại diện" class="avatar">
+            <p><strong>Tên:</strong> Phạm Nhật Trung</p>
+            <p><strong>Ngày sinh:</strong> 06/02/2003</p>
+            <p><strong>Sinh viên học trường:</strong></p> 
+                <ul>
+                <li>Đại học Nguyễn Tất Thành</li>
+                </ul>
+            <p><strong>Sở thích:</strong></p>
+            <ul>
+                <li>Du Lịch</li>
+                <li>Đọc Sách</li>
+                <li>Chơi Game</li>
+                <li>Lập Trình</li>
+            </ul>
+            <p><strong>Nơi sinh sống:</strong></p>
+            <ul>
+                <li>Thành phố Hồ Chí Minh</li>
+            </ul>
+        </div>
+            <div id="skills" class="maincontent">
+                <h2 class="skills-header">Kỹ năng</h2>
+                <div class="skills">
+                    <h3 class="skill-type">Kỹ năng mềm</h3>
+                    <ul>
+                        <li>Làm việc nhóm</li>
+                        <li>Quản lý thời gian</li>
+                        <li>Giải quyết vấn đề</li>
+                        <li>Khả năng tự nhận thức</li>
+                        <li>Giao tiếp</li>
+                    </ul>
+    
+                    <h3 class="skill-type">Kỹ năng cứng</h3>
+                    <ul>
+                        <li>Lập trình code (C++,C#)</li>
+                        <li>Lập trình web (HTML, CSS, JavaScript)</li>
+                        <li>Quản lý cơ sở dữ liệu (SQL)</li>
+                        <li>Phát triển ứng dụng di động</li>
+                    </ul>  
+                </div>
+
+                <!-- Thêm khoảng cách giữa các phần -->
+                <h2 id="achievements">Các thành tích </h2> 
+                <h3 class="achievements-header">Thành tích học tập</h3>
+                <ul>
+                    <li>Xây dựng một trò chơi phiêu lưu RPG</li>
+                </ul>
+                <h3 class="achievements-header">Thành tích cá nhân</h3>
+                <ul>
+                    <li>Chạy Deadline xuyên đêm 2 ngày liên tục vẫn không bị buồn ngủ</li>
+                    <li>Tham gia các giải đấu nhỏ Liên Minh Huyền Thoại Giải Net115</li>
+                    <li>Đạt được 100 người theo dõi trên YouTube content creator 2017</li>
+                </ul>
+
+                <h2 id="favoritecars" >Các loại xe yêu thích nhất</h2>
+                <ul class="favorite-cars">
+                    <li>
+                        <a href="https://en.wikipedia.org/wiki/Audi_R8" target="_blank" class="car-link">
+                            <img src="audi r8.jpg" alt="Audi R8">
+                            <p>Audi R8</p>
+                        </a>
+                    </li>
+                    <li>
+                        <a href="https://www.audi-mediacenter.com/en/audi-rs-7-sportback-49" target="_blank" class="car-link">
+                            <img src="audi rs7.jpg" alt="Audi RS7 Sportback">
+                            <p>Audi RS7 Sportback</p>
+                        </a>
+                    </li>
+                </ul>
+
+                <h2 id="contact">Liên hệ</h2>
+                <p>Nếu mọi người có thắc mắc gì xin hãy liên hệ với mình thông qua các thông tin liên hệ bên dưới hoặc điền vào form bên dưới để gửi tin nhắn cho mình.</p>
+                <p>Xin cảm ơn!</p>
+                <ul>
+                    <li><strong>Email:</strong> trungtommy.ntp@gmail.com</li>
+                    <li><strong>SĐT:</strong> 0774240339</li>
+                </ul>
+                <form action="submit_form.php" method="post">
+                    <label for="name">Tên:</label>
+                    <input type="text" id="name" name="name" required>
+
+                    <label for="email">Email:</label>
+                    <input type="email" id="email" name="email" required>
+
+                    <label for="message">Tin nhắn:</label>
+                    <textarea id="message" name="message" rows="4" required></textarea>
+
+                    <button type="submit">Gửi</button>
+                </form>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer>
+        <p>&copy; 2024 Phạm Nhật Trung. Copyright.</p>
+    </footer>
+    <script src="script.js"></script>
+    <script src="https://code.jquery.com/jquery-3.5.1.slim.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.9.2/dist/umd/popper.min.js"></script>
+    <script src="bootstrap-5.3.3-dist/js/bootstrap.min.js"></script>
+</body>
+</html>
