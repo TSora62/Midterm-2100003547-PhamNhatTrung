@@ -158,6 +158,7 @@ footer {
 
 .skills-header, .achievements-header {
     margin-bottom: 20px;
+    border-bottom: 2px solid darkblue;
 }
 
 .favorite-cars {
