@@ -158,7 +158,6 @@ footer {
 
 .skills-header, .achievements-header {
     margin-bottom: 20px;
-    border-bottom: 2px solid darkblue;
 }
 
 .favorite-cars {
@@ -211,6 +210,9 @@ footer {
 
 body {
     animation: colorChange 10s infinite; /* Thay đổi màu nền mỗi 10 giây, lặp lại vô hạn */
+}
+.skill-type{
+    border-bottom: 2px solid darkblue;
 }
 
 
